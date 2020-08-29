@@ -1,0 +1,21 @@
+.item{
+    list-style: none;
+    display: inline-block;
+}
+.item:hover > .mega-menu{
+    visibility: visible;
+    opacity: 1;
+
+}
+
+.mega-menu{
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    left: 0;
+    right: 0;
+    background: gray;
+    visibility: hidden;
+    opacity: 0;
+    transition: ease all .5s;
+}
