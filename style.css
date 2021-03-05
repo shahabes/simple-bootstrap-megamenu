@@ -1,21 +1,42 @@
 .item{
     list-style: none;
     display: inline-block;
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px;
+    border-bottom: 1px solid transparent;
+    cursor: pointer;
 }
 .item:hover > .mega-menu{
     visibility: visible;
     opacity: 1;
-
+    transform: translateY(0);
 }
 
+.menu{
+    background: #f7f7f7;
+    padding: 20px;
+}
+
+.mega-menu img{
+    width: 100%;
+     object-fit: cover;
+}
 .mega-menu{
     position: absolute;
     padding: 0;
     margin: 0;
     left: 0;
     right: 0;
-    background: gray;
+    background: rgb(245, 245, 245);
     visibility: hidden;
     opacity: 0;
     transition: ease all .5s;
+    padding: 10px;
+    transform: translateY(20px);
+    cursor: auto;
+}
+
+.item:hover{
+    border-bottom: 1px solid black;
 }
